@@ -8,4 +8,5 @@ public class User
     public string Email {get;set;} = string.Empty;
     public string Password {get;set;} = string.Empty;
     public UserInfo UserInfo {get;set;} = new();
+    public ICollection<Order> Orders {get;set;} = new List<Order>();
 }
